@@ -1,0 +1,27 @@
+{
+  "name": "playwright-bdd-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npm run bddgen && npm run playwright-test",
+    "bddgen": "npx bddgen",
+    "playwright-test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4",
+    "allure-commandline": "^2.30.0",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "playwright-bdd": "^7.4.0"
+  },
+  "dependencies": {
+    "allure-playwright": "3.0.0-beta.12",
+    "fs": "^0.0.1-security"
+  }
+}
