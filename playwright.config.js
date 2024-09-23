@@ -4,8 +4,8 @@ import { defineBddConfig } from 'playwright-bdd';
 
 const testDir = defineBddConfig ({
   importTestFrom: 'tests/fixtures/fixtures.js',
-  features: 'tests/features/login.feature',
-  steps: 'tests/steps/loginSteps.js' ,
+  features: ['tests/features/**.feature'],
+  steps: ['tests/steps/**.js'],
 });
 
 /**
